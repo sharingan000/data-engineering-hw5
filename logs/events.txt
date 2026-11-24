@@ -1,0 +1,89 @@
+LAST SEEN   TYPE      REASON                  OBJECT                         MESSAGE
+45s         Normal    SuccessfulCreate        job/measure                    Created pod: measure-qfkk2
+45s         Normal    Scheduled               pod/measure-qfkk2              Successfully assigned de-hw5/measure-qfkk2 to de-hw5-control-plane
+44s         Normal    Pulled                  pod/measure-qfkk2              Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+44s         Normal    Created                 pod/measure-qfkk2              Container created
+44s         Normal    Started                 pod/measure-qfkk2              Container started
+42s         Normal    Scheduled               pod/oom-mfcfv                  Successfully assigned de-hw5/oom-mfcfv to de-hw5-control-plane
+42s         Normal    Completed               job/measure                    Job completed
+42s         Normal    SuccessfulCreate        job/oom                        Created pod: oom-mfcfv
+41s         Normal    Pulled                  pod/oom-mfcfv                  Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+41s         Normal    Created                 pod/oom-mfcfv                  Container created
+41s         Normal    Started                 pod/oom-mfcfv                  Container started
+39s         Normal    SuccessfulCreate        job/tuned                      Created pod: tuned-fr9vz
+39s         Warning   BackoffLimitExceeded    job/oom                        Job has reached the specified backoff limit
+39s         Normal    Scheduled               pod/tuned-fr9vz                Successfully assigned de-hw5/tuned-fr9vz to de-hw5-control-plane
+38s         Normal    Started                 pod/tuned-fr9vz                Container started
+38s         Normal    Created                 pod/tuned-fr9vz                Container created
+38s         Normal    Pulled                  pod/tuned-fr9vz                Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+36s         Normal    WaitForFirstConsumer    persistentvolumeclaim/disk0    waiting for first consumer to be created before binding
+31s         Normal    ExternalProvisioning    persistentvolumeclaim/disk1    Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+36s         Normal    Provisioning            persistentvolumeclaim/disk0    External provisioner is provisioning volume for claim "de-hw5/disk0"
+36s         Normal    Completed               job/tuned                      Job completed
+31s         Normal    ExternalProvisioning    persistentvolumeclaim/disk0    Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+36s         Normal    SuccessfulCreate        replicaset/rustfs-5844848dbb   Created pod: rustfs-5844848dbb-69t5t
+36s         Normal    ScalingReplicaSet       deployment/rustfs              Scaled up replica set rustfs-5844848dbb from 0 to 1
+36s         Normal    WaitForFirstConsumer    persistentvolumeclaim/disk3    waiting for first consumer to be created before binding
+36s         Normal    Provisioning            persistentvolumeclaim/disk1    External provisioner is provisioning volume for claim "de-hw5/disk1"
+36s         Normal    WaitForFirstConsumer    persistentvolumeclaim/disk1    waiting for first consumer to be created before binding
+36s         Normal    ExternalProvisioning    persistentvolumeclaim/disk2    Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+36s         Normal    WaitForFirstConsumer    persistentvolumeclaim/disk2    waiting for first consumer to be created before binding
+36s         Normal    Provisioning            persistentvolumeclaim/disk2    External provisioner is provisioning volume for claim "de-hw5/disk2"
+31s         Normal    ExternalProvisioning    persistentvolumeclaim/disk3    Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+36s         Normal    Provisioning            persistentvolumeclaim/disk3    External provisioner is provisioning volume for claim "de-hw5/disk3"
+32s         Normal    ProvisioningSucceeded   persistentvolumeclaim/disk2    Successfully provisioned volume pvc-82c085b2-dd39-41f6-9052-f439b4a1a7e3
+30s         Normal    ProvisioningSucceeded   persistentvolumeclaim/disk3    Successfully provisioned volume pvc-319a1f2e-79b7-4dd9-b3a6-e62846f634d7
+31s         Normal    ProvisioningSucceeded   persistentvolumeclaim/disk1    Successfully provisioned volume pvc-bc3f45d7-3d06-4d7c-a6ea-33f10d0f2752
+30s         Normal    Scheduled               pod/rustfs-5844848dbb-69t5t    Successfully assigned de-hw5/rustfs-5844848dbb-69t5t to de-hw5-control-plane
+29s         Normal    Pulling                 pod/rustfs-5844848dbb-69t5t    Pulling image "rustfs/rustfs:1.0.1"
+30s         Normal    ProvisioningSucceeded   persistentvolumeclaim/disk0    Successfully provisioned volume pvc-81945571-5320-4b50-92f4-56077aa8b2b3
+11s         Normal    SuccessfulCreate        job/seed                       Created pod: seed-ghz7t
+11s         Warning   Unhealthy               pod/rustfs-5844848dbb-69t5t    Readiness probe failed: dial tcp 10.244.0.12:9000: connect: connection refused
+11s         Normal    Started                 pod/rustfs-5844848dbb-69t5t    Container started
+11s         Normal    Created                 pod/rustfs-5844848dbb-69t5t    Container created
+11s         Normal    Pulled                  pod/rustfs-5844848dbb-69t5t    Successfully pulled image "rustfs/rustfs:1.0.1" in 17.979s (17.979s including waiting). Image size: 105757343 bytes.
+11s         Normal    Scheduled               pod/seed-ghz7t                 Successfully assigned de-hw5/seed-ghz7t to de-hw5-control-plane
+11s         Normal    Pulled                  pod/seed-ghz7t                 Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+11s         Normal    Created                 pod/seed-ghz7t                 Container created
+10s         Normal    Started                 pod/seed-ghz7t                 Container started
+8s          Normal    Scheduled               pod/map-0-jgbqf                Successfully assigned de-hw5/map-0-jgbqf to de-hw5-control-plane
+8s          Normal    Scheduled               pod/map-2-6xwg5                Successfully assigned de-hw5/map-2-6xwg5 to de-hw5-control-plane
+8s          Normal    SuccessfulCreate        job/map                        Created pod: map-2-6xwg5
+8s          Normal    SuccessfulCreate        job/map                        Created pod: map-1-lqmf4
+8s          Normal    SuccessfulCreate        job/map                        Created pod: map-0-jgbqf
+8s          Normal    Completed               job/seed                       Job completed
+8s          Normal    SuccessfulCreate        job/map                        Created pod: map-3-ljswz
+8s          Normal    Scheduled               pod/map-1-lqmf4                Successfully assigned de-hw5/map-1-lqmf4 to de-hw5-control-plane
+8s          Normal    Scheduled               pod/map-3-ljswz                Successfully assigned de-hw5/map-3-ljswz to de-hw5-control-plane
+7s          Normal    Created                 pod/map-3-ljswz                Container created
+7s          Normal    Created                 pod/map-2-6xwg5                Container created
+7s          Normal    Pulled                  pod/map-2-6xwg5                Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+7s          Normal    Started                 pod/map-2-6xwg5                Container started
+7s          Normal    Started                 pod/map-1-lqmf4                Container started
+7s          Normal    Created                 pod/map-1-lqmf4                Container created
+7s          Normal    Pulled                  pod/map-1-lqmf4                Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+7s          Normal    Pulled                  pod/map-3-ljswz                Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+7s          Normal    Started                 pod/map-0-jgbqf                Container started
+7s          Normal    Created                 pod/map-0-jgbqf                Container created
+7s          Normal    Pulled                  pod/map-0-jgbqf                Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+7s          Normal    Started                 pod/map-3-ljswz                Container started
+5s          Normal    SuccessfulCreate        job/reduce                     Created pod: reduce-ln8cb
+5s          Normal    Scheduled               pod/reduce-ln8cb               Successfully assigned de-hw5/reduce-ln8cb to de-hw5-control-plane
+5s          Normal    Completed               job/map                        Job completed
+4s          Normal    Started                 pod/reduce-ln8cb               Container started
+4s          Normal    Created                 pod/reduce-ln8cb               Container created
+4s          Normal    Pulled                  pod/reduce-ln8cb               Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+2s          Normal    Completed               job/reduce                     Job completed
+1s          Normal    Started                 pod/low                        Container started
+1s          Normal    Preempted               pod/low                        Preempted by pod 02acea82-f3ce-491b-b0db-ee42a0be34c2 on node de-hw5-control-plane
+1s          Normal    Created                 pod/low                        Container created
+1s          Normal    Pulled                  pod/low                        Container image "hw5-skills:local" already present on machine and can be accessed by the pod
+1s          Normal    Scheduled               pod/low                        Successfully assigned de-hw5/low to de-hw5-control-plane
+1s          Normal    Scheduled               pod/high                       Successfully assigned de-hw5/high to de-hw5-control-plane
+1s          Warning   FailedScheduling        pod/high                       0/1 nodes are available: 1 Insufficient cpu. preemption: found a potential placement for pod on node de-hw5-control-plane, preempting 1 victims
+1s          Warning   FailedScheduling        pod/waiting                    0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 Insufficient cpu.
+0s          Normal    Killing                 pod/low                        Stopping container wait
+0s          Normal    Killing                 pod/high                       Stopping container wait
+0s          Normal    Started                 pod/high                       Container started
+0s          Normal    Created                 pod/high                       Container created
+0s          Normal    Pulled                  pod/high                       Container image "hw5-skills:local" already present on machine and can be accessed by the pod

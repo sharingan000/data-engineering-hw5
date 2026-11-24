@@ -1,0 +1,142 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2026-11-24T16:14:45Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: low
+    namespace: de-hw5
+    resourceVersion: "2240"
+    uid: f37f1b9d-fd89-46b8-84aa-5c9ad2352225
+  kind: Event
+  lastTimestamp: "2026-11-24T16:14:45Z"
+  message: Successfully assigned de-hw5/low to de-hw5-control-plane
+  metadata:
+    creationTimestamp: "2026-11-24T16:14:45Z"
+    name: low.18eb0748aedf673a
+    namespace: de-hw5
+    resourceVersion: "2242"
+    uid: 02a2f8f3-77b9-4dc7-b3cc-9846f351efd8
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2026-11-24T16:14:45Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{wait}
+    kind: Pod
+    name: low
+    namespace: de-hw5
+    resourceVersion: "2241"
+    uid: f37f1b9d-fd89-46b8-84aa-5c9ad2352225
+  kind: Event
+  lastTimestamp: "2026-11-24T16:14:45Z"
+  message: Container image "hw5-skills:local" already present on machine and can be
+    accessed by the pod
+  metadata:
+    creationTimestamp: "2026-11-24T16:14:45Z"
+    name: low.18eb0748c4e9e03b
+    namespace: de-hw5
+    resourceVersion: "2245"
+    uid: fd644baa-1f75-4887-9f66-95137488ecca
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: de-hw5-control-plane
+  source:
+    component: kubelet
+    host: de-hw5-control-plane
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2026-11-24T16:14:45Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{wait}
+    kind: Pod
+    name: low
+    namespace: de-hw5
+    resourceVersion: "2241"
+    uid: f37f1b9d-fd89-46b8-84aa-5c9ad2352225
+  kind: Event
+  lastTimestamp: "2026-11-24T16:14:45Z"
+  message: Container created
+  metadata:
+    creationTimestamp: "2026-11-24T16:14:45Z"
+    name: low.18eb0748c573819f
+    namespace: de-hw5
+    resourceVersion: "2247"
+    uid: 49762f72-84ee-49f1-8195-190095acbd8b
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: de-hw5-control-plane
+  source:
+    component: kubelet
+    host: de-hw5-control-plane
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2026-11-24T16:14:45Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{wait}
+    kind: Pod
+    name: low
+    namespace: de-hw5
+    resourceVersion: "2241"
+    uid: f37f1b9d-fd89-46b8-84aa-5c9ad2352225
+  kind: Event
+  lastTimestamp: "2026-11-24T16:14:45Z"
+  message: Container started
+  metadata:
+    creationTimestamp: "2026-11-24T16:14:45Z"
+    name: low.18eb0748c805fda1
+    namespace: de-hw5
+    resourceVersion: "2248"
+    uid: 1b3117ef-9d3d-4f67-bd32-fcbced49fd6b
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: de-hw5-control-plane
+  source:
+    component: kubelet
+    host: de-hw5-control-plane
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2026-11-24T16:14:45Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: low
+    namespace: de-hw5
+    resourceVersion: "2249"
+    uid: f37f1b9d-fd89-46b8-84aa-5c9ad2352225
+  kind: Event
+  lastTimestamp: "2026-11-24T16:14:45Z"
+  message: Preempted by pod 02acea82-f3ce-491b-b0db-ee42a0be34c2 on node de-hw5-control-plane
+  metadata:
+    creationTimestamp: "2026-11-24T16:14:45Z"
+    name: low.18eb0748d52c754e
+    namespace: de-hw5
+    resourceVersion: "2261"
+    uid: 61612cae-89d2-49f0-be0d-887ecac69f59
+  reason: Preempted
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+kind: List
+metadata:
+  resourceVersion: ""

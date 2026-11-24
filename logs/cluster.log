@@ -1,0 +1,199 @@
+No kind clusters found.
+Creating cluster "de-hw5" ...
+ • Ensuring node image (kindest/node:v1.37.0) 🖼️  ...
+ ✓ Ensuring node image (kindest/node:v1.37.0) 🖼️
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦 
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-de-hw5"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-de-hw5
+
+Have a nice day! 👋
+#0 building with "colima-de-hw5" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 207B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 2.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 229.60kB done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim@sha256:191083cdf6c7bda8c76158983163ead5d5cf7b77cf3033e805bb0f5296f51b4b
+#5 resolve docker.io/library/python:3.12-slim@sha256:191083cdf6c7bda8c76158983163ead5d5cf7b77cf3033e805bb0f5296f51b4b 0.0s done
+#5 sha256:226fb6b313b12ce882faf519cb42d6e89f8063b552103e61753eb9573b63fd13 0B / 248B 0.2s
+#5 sha256:226fb6b313b12ce882faf519cb42d6e89f8063b552103e61753eb9573b63fd13 248B / 248B 0.2s done
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 0B / 12.06MB 0.3s
+#5 sha256:b37b16754da2430b6225ca41d206fdf4b06d72f378fa321a86dc20ee5823f6d8 0B / 1.27MB 0.2s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 0B / 30.20MB 0.2s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 1.05MB / 12.06MB 0.8s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 2.10MB / 12.06MB 1.1s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 3.15MB / 12.06MB 1.2s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 4.19MB / 12.06MB 1.5s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 5.24MB / 12.06MB 1.7s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 6.29MB / 12.06MB 2.0s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 7.34MB / 12.06MB 2.4s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 8.39MB / 12.06MB 3.0s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 9.44MB / 12.06MB 3.8s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 10.49MB / 12.06MB 4.2s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 11.53MB / 12.06MB 4.5s
+#5 sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 12.06MB / 12.06MB 4.7s done
+#5 sha256:b37b16754da2430b6225ca41d206fdf4b06d72f378fa321a86dc20ee5823f6d8 1.05MB / 1.27MB 5.3s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 1.05MB / 30.20MB 5.3s
+#5 sha256:b37b16754da2430b6225ca41d206fdf4b06d72f378fa321a86dc20ee5823f6d8 1.27MB / 1.27MB 5.5s done
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 3.15MB / 30.20MB 6.5s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 5.24MB / 30.20MB 7.7s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 7.34MB / 30.20MB 8.4s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 9.44MB / 30.20MB 9.0s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 11.53MB / 30.20MB 9.5s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 13.63MB / 30.20MB 10.2s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 15.73MB / 30.20MB 11.6s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 17.83MB / 30.20MB 12.6s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 19.92MB / 30.20MB 13.2s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 22.02MB / 30.20MB 13.8s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 24.12MB / 30.20MB 14.7s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 26.21MB / 30.20MB 15.5s
+#5 sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 28.31MB / 30.20MB 16.1s
+#5 DONE 16.4s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim@sha256:191083cdf6c7bda8c76158983163ead5d5cf7b77cf3033e805bb0f5296f51b4b
+#5 extracting sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6
+#5 extracting sha256:48fb00926fe468d83ca04ee6775f36350d17e0f328dfcb03aadb5de0c52ae3f6 0.5s done
+#5 DONE 16.9s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim@sha256:191083cdf6c7bda8c76158983163ead5d5cf7b77cf3033e805bb0f5296f51b4b
+#5 extracting sha256:b37b16754da2430b6225ca41d206fdf4b06d72f378fa321a86dc20ee5823f6d8 0.0s done
+#5 extracting sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106
+#5 extracting sha256:cb82b968e30a0eaf3f0c3a4e1a996dacd981119f68d33d1febff34c1122fb106 0.2s done
+#5 DONE 17.1s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim@sha256:191083cdf6c7bda8c76158983163ead5d5cf7b77cf3033e805bb0f5296f51b4b
+#5 extracting sha256:226fb6b313b12ce882faf519cb42d6e89f8063b552103e61753eb9573b63fd13 done
+#5 DONE 17.1s
+
+#6 [2/5] WORKDIR /app
+#6 DONE 0.2s
+
+#7 [3/5] RUN pip install --no-cache-dir boto3==1.43.111
+#7 17.09 Collecting boto3==1.43.111
+#7 17.77   Downloading boto3-1.43.111-py3-none-any.whl.metadata (6.6 kB)
+#7 51.55 Collecting botocore<1.44.0,>=1.43.111 (from boto3==1.43.111)
+#7 51.70   Downloading botocore-1.43.127-py3-none-any.whl.metadata (5.6 kB)
+#7 52.71 Collecting jmespath<2.0.0,>=0.7.1 (from boto3==1.43.111)
+#7 52.87   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+#7 53.60 Collecting s3transfer<0.20.0,>=0.19.0 (from boto3==1.43.111)
+#7 53.75   Downloading s3transfer-0.19.3-py3-none-any.whl.metadata (1.7 kB)
+#7 54.15 Collecting python-dateutil<3.0.0,>=2.1 (from botocore<1.44.0,>=1.43.111->boto3==1.43.111)
+#7 54.30   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+#7 55.89 Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.44.0,>=1.43.111->boto3==1.43.111)
+#7 56.04   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#7 56.57 Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1->botocore<1.44.0,>=1.43.111->boto3==1.43.111)
+#7 56.72   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#7 56.93 Downloading boto3-1.43.111-py3-none-any.whl (140 kB)
+#7 64.72 Downloading botocore-1.43.127-py3-none-any.whl (16.3 MB)
+#7 960.0    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.3/16.3 MB 20.3 kB/s eta 0:00:00
+#7 960.2 Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+#7 961.6 Downloading s3transfer-0.19.3-py3-none-any.whl (90 kB)
+#7 966.0 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#7 977.3 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#7 984.8 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#7 985.6 Installing collected packages: urllib3, six, jmespath, python-dateutil, botocore, s3transfer, boto3
+#7 986.1 Successfully installed boto3-1.43.111 botocore-1.43.127 jmespath-1.1.0 python-dateutil-2.9.0.post0 s3transfer-0.19.3 six-1.17.0 urllib3-2.8.0
+#7 986.1 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#7 986.5 
+#7 986.5 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#7 986.5 [notice] To update, run: pip install --upgrade pip
+#7 DONE 986.6s
+
+#8 [4/5] COPY pipeline.py worker.py ./
+#8 DONE 0.0s
+
+#9 [5/5] COPY data/ data/
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 1.0s done
+#10 exporting manifest sha256:b79cddc73e1c3f947f51d49e470c8a3453655284bb52241a7882e28b915278ca
+#10 exporting manifest sha256:b79cddc73e1c3f947f51d49e470c8a3453655284bb52241a7882e28b915278ca done
+#10 exporting config sha256:6371e53083d22e1d3e096b1186a6042003c1373491b0f1aea1fd14fce6e814af done
+#10 exporting attestation manifest sha256:af2da765799239620b07271d504cce226ed9271f601dedb3592f7fbf2ae12816 done
+#10 exporting manifest list sha256:01835e701839aeca0f52b9d53562dc619ea042c3bbb9e5ab1eb364c26762cc2c done
+#10 naming to docker.io/library/hw5-skills:local done
+#10 unpacking to docker.io/library/hw5-skills:local
+#10 unpacking to docker.io/library/hw5-skills:local 0.3s done
+#10 DONE 1.3s
+Image: "hw5-skills:local" with ID "sha256:01835e701839aeca0f52b9d53562dc619ea042c3bbb9e5ab1eb364c26762cc2c" not yet present on node "de-hw5-control-plane", loading...
+namespace/de-hw5 created
+job.batch/measure created
+job.batch/measure condition met
+[{"size": 2, "skills": ["python", "sql"], "frequency": 122}, {"size": 2, "skills": ["machine learning", "python"], "frequency": 105}, {"size": 2, "skills": ["ml", "python"], "frequency": 54}, {"size": 2, "skills": ["python", "английский язык"], "frequency": 51}, {"size": 2, "skills": ["python", "pytorch"], "frequency": 48}, {"size": 2, "skills": ["python", "базы данных"], "frequency": 45}, {"size": 2, "skills": ["python", "математический анализ"], "frequency": 43}, {"size": 2, "skills": ["machine learning", "английский язык"], "frequency": 42}, {"size": 2, "skills": ["python", "статистический анализ"], "frequency": 41}, {"size": 2, "skills": ["git", "python"], "frequency": 40}]
+peak_bytes 17719296
+peak=17719296 bytes; tuned limit=22Mi
+job.batch/oom created
+job.batch/oom condition met
+job.batch/tuned created
+job.batch/tuned condition met
+[{"size": 2, "skills": ["python", "sql"], "frequency": 122}, {"size": 2, "skills": ["machine learning", "python"], "frequency": 105}, {"size": 2, "skills": ["ml", "python"], "frequency": 54}, {"size": 2, "skills": ["python", "английский язык"], "frequency": 51}, {"size": 2, "skills": ["python", "pytorch"], "frequency": 48}, {"size": 2, "skills": ["python", "базы данных"], "frequency": 45}, {"size": 2, "skills": ["python", "математический анализ"], "frequency": 43}, {"size": 2, "skills": ["machine learning", "английский язык"], "frequency": 42}, {"size": 2, "skills": ["python", "статистический анализ"], "frequency": 41}, {"size": 2, "skills": ["git", "python"], "frequency": 40}]
+peak_bytes 17649664
+secret/storage-login created
+persistentvolumeclaim/disk0 created
+persistentvolumeclaim/disk1 created
+persistentvolumeclaim/disk2 created
+persistentvolumeclaim/disk3 created
+service/rustfs created
+deployment.apps/rustfs created
+Waiting for deployment "rustfs" rollout to finish: 0 of 1 updated replicas are available...
+deployment "rustfs" successfully rolled out
+job.batch/seed created
+job.batch/seed condition met
+job.batch/map created
+job.batch/map condition met
+Found 4 pods, using pod/map-0-jgbqf
+part 0 distinct_pairs 1809
+job.batch/reduce created
+job.batch/reduce condition met
+[{"size": 2, "skills": ["python", "sql"], "frequency": 122}, {"size": 2, "skills": ["machine learning", "python"], "frequency": 105}, {"size": 2, "skills": ["ml", "python"], "frequency": 54}, {"size": 2, "skills": ["python", "английский язык"], "frequency": 51}, {"size": 2, "skills": ["python", "pytorch"], "frequency": 48}, {"size": 2, "skills": ["python", "базы данных"], "frequency": 45}, {"size": 2, "skills": ["python", "математический анализ"], "frequency": 43}, {"size": 2, "skills": ["machine learning", "английский язык"], "frequency": 42}, {"size": 2, "skills": ["python", "статистический анализ"], "frequency": 41}, {"size": 2, "skills": ["git", "python"], "frequency": 40}]
+priorityclass.scheduling.k8s.io/hw5-low created
+priorityclass.scheduling.k8s.io/hw5-high created
+pod/low created
+pod/low condition met
+pod/waiting created
+  Warning  FailedScheduling  0s    default-scheduler  0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 Insufficient cpu.
+pod "waiting" deleted from de-hw5 namespace
+pod/high created
+pod/high condition met
+  message: Preempted by pod 02acea82-f3ce-491b-b0db-ee42a0be34c2 on node de-hw5-control-plane
+  reason: Preempted
+pod "high" deleted from de-hw5 namespace
+namespace/de-hw5-quota created
+resourcequota/one-pod created
+pod/first created
+Error from server (Forbidden): pods "second" is forbidden: exceeded quota: one-pod, requested: pods=1, used: pods=1, limited: pods=1
+NAME                      READY   STATUS      RESTARTS   AGE   IP            NODE                   NOMINATED NODE   READINESS GATES
+map-0-jgbqf               0/1     Completed   0          8s    10.244.0.14   de-hw5-control-plane   <none>           <none>
+map-1-lqmf4               0/1     Completed   0          8s    10.244.0.16   de-hw5-control-plane   <none>           <none>
+map-2-6xwg5               0/1     Completed   0          8s    10.244.0.15   de-hw5-control-plane   <none>           <none>
+map-3-ljswz               0/1     Completed   0          8s    10.244.0.17   de-hw5-control-plane   <none>           <none>
+measure-qfkk2             0/1     Completed   0          45s   10.244.0.5    de-hw5-control-plane   <none>           <none>
+oom-mfcfv                 0/1     OOMKilled   0          42s   10.244.0.6    de-hw5-control-plane   <none>           <none>
+reduce-ln8cb              0/1     Completed   0          5s    10.244.0.18   de-hw5-control-plane   <none>           <none>
+rustfs-5844848dbb-69t5t   1/1     Running     0          36s   10.244.0.12   de-hw5-control-plane   <none>           <none>
+seed-ghz7t                0/1     Completed   0          11s   10.244.0.13   de-hw5-control-plane   <none>           <none>
+tuned-fr9vz               0/1     Completed   0          39s   10.244.0.7    de-hw5-control-plane   <none>           <none>

@@ -1,0 +1,1 @@
+Error from server (Forbidden): pods "second" is forbidden: exceeded quota: one-pod, requested: pods=1, used: pods=1, limited: pods=1
