@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "kind": "List",
+  "metadata": {
+    "name": "priorities"
+  },
+  "items": [
+    {
+      "apiVersion": "scheduling.k8s.io/v1",
+      "kind": "PriorityClass",
+      "metadata": {
+        "name": "hw5-low"
+      },
+      "value": 10,
+      "globalDefault": false
+    },
+    {
+      "apiVersion": "scheduling.k8s.io/v1",
+      "kind": "PriorityClass",
+      "metadata": {
+        "name": "hw5-high"
+      },
+      "value": 100,
+      "globalDefault": false
+    }
+  ]
+}

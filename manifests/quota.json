@@ -1,0 +1,12 @@
+{
+  "apiVersion": "v1",
+  "kind": "ResourceQuota",
+  "metadata": {
+    "name": "one-pod"
+  },
+  "spec": {
+    "hard": {
+      "pods": "1"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "oom"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "containers": [
+          {
+            "name": "worker",
+            "image": "hw5-skills:local",
+            "imagePullPolicy": "Never",
+            "args": [
+              "single"
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "8Mi"
+              },
+              "limits": {
+                "cpu": "1",
+                "memory": "8Mi"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

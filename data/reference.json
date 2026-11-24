@@ -1,0 +1,82 @@
+[
+  {
+    "size": 2,
+    "skills": [
+      "python",
+      "sql"
+    ],
+    "frequency": 122
+  },
+  {
+    "size": 2,
+    "skills": [
+      "machine learning",
+      "python"
+    ],
+    "frequency": 105
+  },
+  {
+    "size": 2,
+    "skills": [
+      "ml",
+      "python"
+    ],
+    "frequency": 54
+  },
+  {
+    "size": 2,
+    "skills": [
+      "python",
+      "английский язык"
+    ],
+    "frequency": 51
+  },
+  {
+    "size": 2,
+    "skills": [
+      "python",
+      "pytorch"
+    ],
+    "frequency": 48
+  },
+  {
+    "size": 2,
+    "skills": [
+      "python",
+      "базы данных"
+    ],
+    "frequency": 45
+  },
+  {
+    "size": 2,
+    "skills": [
+      "python",
+      "математический анализ"
+    ],
+    "frequency": 43
+  },
+  {
+    "size": 2,
+    "skills": [
+      "machine learning",
+      "английский язык"
+    ],
+    "frequency": 42
+  },
+  {
+    "size": 2,
+    "skills": [
+      "python",
+      "статистический анализ"
+    ],
+    "frequency": 41
+  },
+  {
+    "size": 2,
+    "skills": [
+      "git",
+      "python"
+    ],
+    "frequency": 40
+  }
+]

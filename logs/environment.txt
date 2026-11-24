@@ -1,0 +1,3 @@
+
+permission denied while trying to connect to the docker API at unix:///Users/karpov0o0/.colima/default/docker.sock
+time="2026-11-24T18:44:20+03:00" level=fatal msg="colima is not running"

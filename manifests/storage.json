@@ -1,0 +1,227 @@
+{
+  "apiVersion": "v1",
+  "kind": "List",
+  "metadata": {
+    "name": "storage"
+  },
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Secret",
+      "metadata": {
+        "name": "storage-login"
+      },
+      "stringData": {
+        "AWS_ACCESS_KEY_ID": "hw5local",
+        "AWS_SECRET_ACCESS_KEY": "hw5-local-experiment-only"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "metadata": {
+        "name": "disk0"
+      },
+      "spec": {
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "resources": {
+          "requests": {
+            "storage": "1Gi"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "metadata": {
+        "name": "disk1"
+      },
+      "spec": {
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "resources": {
+          "requests": {
+            "storage": "1Gi"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "metadata": {
+        "name": "disk2"
+      },
+      "spec": {
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "resources": {
+          "requests": {
+            "storage": "1Gi"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "metadata": {
+        "name": "disk3"
+      },
+      "spec": {
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "resources": {
+          "requests": {
+            "storage": "1Gi"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": {
+        "name": "rustfs"
+      },
+      "spec": {
+        "selector": {
+          "app": "rustfs"
+        },
+        "ports": [
+          {
+            "port": 9000
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "apps/v1",
+      "kind": "Deployment",
+      "metadata": {
+        "name": "rustfs"
+      },
+      "spec": {
+        "replicas": 1,
+        "strategy": {
+          "type": "Recreate"
+        },
+        "selector": {
+          "matchLabels": {
+            "app": "rustfs"
+          }
+        },
+        "template": {
+          "metadata": {
+            "labels": {
+              "app": "rustfs"
+            }
+          },
+          "spec": {
+            "securityContext": {
+              "fsGroup": 10001
+            },
+            "containers": [
+              {
+                "name": "rustfs",
+                "image": "rustfs/rustfs:1.0.1",
+                "env": [
+                  {
+                    "name": "RUSTFS_VOLUMES",
+                    "value": "/data{0...3}"
+                  },
+                  {
+                    "name": "RUSTFS_ERASURE_SET_DRIVE_COUNT",
+                    "value": "4"
+                  },
+                  {
+                    "name": "RUSTFS_STORAGE_CLASS_STANDARD",
+                    "value": "EC:2"
+                  },
+                  {
+                    "name": "RUSTFS_UNSAFE_BYPASS_DISK_CHECK",
+                    "value": "true"
+                  },
+                  {
+                    "name": "RUSTFS_ACCESS_KEY",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "name": "storage-login",
+                        "key": "AWS_ACCESS_KEY_ID"
+                      }
+                    }
+                  },
+                  {
+                    "name": "RUSTFS_SECRET_KEY",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "name": "storage-login",
+                        "key": "AWS_SECRET_ACCESS_KEY"
+                      }
+                    }
+                  }
+                ],
+                "volumeMounts": [
+                  {
+                    "name": "disk0",
+                    "mountPath": "/data0"
+                  },
+                  {
+                    "name": "disk1",
+                    "mountPath": "/data1"
+                  },
+                  {
+                    "name": "disk2",
+                    "mountPath": "/data2"
+                  },
+                  {
+                    "name": "disk3",
+                    "mountPath": "/data3"
+                  }
+                ],
+                "readinessProbe": {
+                  "tcpSocket": {
+                    "port": 9000
+                  },
+                  "periodSeconds": 2
+                }
+              }
+            ],
+            "volumes": [
+              {
+                "name": "disk0",
+                "persistentVolumeClaim": {
+                  "claimName": "disk0"
+                }
+              },
+              {
+                "name": "disk1",
+                "persistentVolumeClaim": {
+                  "claimName": "disk1"
+                }
+              },
+              {
+                "name": "disk2",
+                "persistentVolumeClaim": {
+                  "claimName": "disk2"
+                }
+              },
+              {
+                "name": "disk3",
+                "persistentVolumeClaim": {
+                  "claimName": "disk3"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

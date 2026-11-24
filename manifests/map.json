@@ -1,0 +1,45 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "map"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "containers": [
+          {
+            "name": "worker",
+            "image": "hw5-skills:local",
+            "imagePullPolicy": "Never",
+            "args": [
+              "map"
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "8Mi"
+              },
+              "limits": {
+                "cpu": "1",
+                "memory": "128Mi"
+              }
+            },
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "storage-login"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "completionMode": "Indexed",
+    "completions": 4,
+    "parallelism": 4
+  }
+}
